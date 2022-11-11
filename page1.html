@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="source/style.css">
+  <title>bicycles</title>
+</head>
+<body>
+	<div class="container">
+<!-------------- NAV ---------------->		
+		<nav class="nav">
+
+		<div class="dropdown">
+	  		<button class="bicycle-main-btn btn  btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+	    	Горный велосипед     
+	  		</button>
+		  	<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+		    <li><a class="dropdown-item" href="page1.html">Горный велосипед</a></li>
+		    <li><a class="dropdown-item" href="page2.html">Женский велосипед</a></li>
+		  	</ul>
+		</div>
+			
+		</nav>
+
+<!-------------- MAIN-CONTENT---------------->		
+		<main class="main-content">
+			<div class="bicycle-img"> <img class="small-bicycle" src="img/image 1.png" alt="bicycle"><img class="big-bicycle" src="img/big1.png"></div>
+			
+			<div class="main-text">
+				<h1 class="subtitle main-text__subtitle">
+					Велосипед STELS Navigator 510 HD 26 2022
+				</h1>
+				<div class="text1 main-text__text">
+					Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой размер рамы расчитан на рост от 135 до 165 см.
+				</div>
+				<div class="text2 main-text__text">
+					Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была изготовлена с учетом использования велосипеда подростками.
+				</div>
+			</div>
+			<!-- <hr class="line"> -->
+		</main>
+		
+<!-------------- SECTION DESCRIPTION---------------->	
+		<section class="sectionDescription">
+
+			<div class="text-characteristics">
+				<div class="text-characteristics__subtitle"><h3>
+					Характеристики
+				</h3></div>
+
+				<div class="list text-characteristics__list">
+					<ul class="characteristics-list">
+						<li>Двойной обод</li>
+						<li>Алюминиевый сплав</li>
+						<li>Колеса диаметром 26 дюймов</li>
+						<li>Покрышки 26х1,95</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="add-characteristics">
+				<div class="subtitle add-characteristics__subtitle">
+					<h3>Добавить характеристику</h3>
+				</div>
+
+				<div class="add-characteristics__input-and-button">
+				<div  class="add-characteristics__input">
+					<form>
+					<input class= 'input add-characteristics__inp' type="text" name="characteristics" value="" placeholder="Алюминиевый сплав" title="Разрешено использовать пробелы, русские буквы и цифры, запятую, точку" pattern="^[,.а-яА-ЯёЁ\d]+$">
+					</form>
+				</div>
+				<div  class="button add-characteristics__button"><button class="add-characteristics__btn" type="submit">
+					Добавить
+				</button> </div>
+				</div>
+				
+			</div>
+		</section>
+
+<!-------------- BANNER---------------->	
+		<div class="banner">
+			<div class="ok banner__ok">
+				<button class="banner__ok__button">
+					Окей
+				</button>
+			</div>
+
+			<div class="cancel banner__cancel">
+				<button class="banner__cancel__button">
+					Отмена
+				</button>
+			</div>
+		</div>
+
+			
+	</div>	
+<script src="js/script.js"></script>
+</body>
+</html>

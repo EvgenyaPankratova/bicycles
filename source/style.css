@@ -1,0 +1,368 @@
+@import url('nullstyle.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	max-width: 100%;
+	background-color: lightgray;
+	padding: 20px 10px 20px 10px;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+	"nav"
+	"main-content"
+	"sectionDescription"
+	"banner";
+	padding: 10px;
+	background-color: white;
+	border-radius: 20px;
+	grid-gap: 20px;
+}
+
+/**************NAV*************/
+.nav {
+	grid-area: nav;
+		
+}
+.bicycle-main-btn{
+	width: 100%;
+	background-color: white;
+	color: #3922C5;
+	font-weight: 500;
+	font-size: 20px;
+	border: none;
+}
+/**************MAIN-CONTENT*************/
+.main-content {
+	grid-area: main-content;
+	display: flex;	
+	flex-direction: column;	
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 20px;
+}
+.big-bicycle{
+	display: none;
+}
+
+.main-text{
+	display: flex;	
+	flex-direction: column;
+}
+.main-text__subtitle{
+	display: block;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	margin-top: 10px;
+}
+.main-text__text{
+	padding-top: 15px;
+}
+.line{
+	width: 100%;
+	color: gray;
+	margin-top: 15px;
+}
+/**************SECTION DESCRIPTION*************/
+.sectionDescription {
+	grid-area: sectionDescription;
+	padding-top: 15px;		
+}
+.text-characteristics{
+	margin-bottom: 20px;
+}
+.text-characteristics__subtitle{
+	margin-bottom: 15px;
+	margin-top: -10px;
+}
+
+.add-characteristics{
+	display: flex;
+	flex-direction: column;
+
+}
+.characteristics-list{
+	line-height: 30px;
+    list-style: none;
+}
+li {
+    list-style-type: '🚴‍♂️';
+    margin-left: 20px;
+}
+
+.add-characteristics__btn{
+	background: #3922C5;
+	border-radius: 16px;
+	color: white;
+	padding: 14px 24px;
+	width: 100%;
+	margin-top: 10px;
+	border: none;
+}
+.add-characteristics__btn:hover{
+	background: #1F1368;
+}
+.add-characteristics__inp{
+	padding: 14px 24px;
+	width: 100%;
+	border-radius: 16px;
+	margin-top: 10px;
+	border: 1px solid #D9D9D9;
+}
+
+
+input:focus:valid {
+    border-color: green;
+    color: green;
+    box-shadow: none;
+}
+input:focus:invalid {
+    border-color: red;
+    color: red;
+    box-shadow: none;
+}
+input:focus {
+    box-shadow: none;
+    outline: 1.5px solid #3922C5;
+}
+/**************BANNER*************/
+.banner {
+	grid-area: banner;
+	box-shadow: 0px 10px 40px rgba(12, 12, 12, 0.1);
+	border-radius: 20px;
+	padding: 20px 15px 20px 15px;
+	display: flex;
+	justify-content: space-around;	
+}
+.banner__ok__button{
+	background: #3922C5;
+	border-radius: 16px;
+	color: white;
+	border: none;
+	padding: 14px 24px;
+}
+.banner__cancel__button{
+	border-radius: 16px;
+	border: none;
+	padding: 14px 24px;
+	background: transparent;
+}
+.banner__cancel__button:hover{
+	color: #1F1368;
+}
+.banner__ok__button:hover{
+	background: #1F1368;
+}
+
+/**************МЕДИА-ЗАПРОСЫ*************/
+@media (min-width: 576px) and (max-width: 1023px) {
+	.container {
+		max-width: 60%;
+		margin-left: 40px;
+		overflow: hidden;
+		padding: 15px;
+		
+	}
+	.main-content {
+	display: flex;	
+	flex-direction: row;
+	justify-content: space-between;
+
+	
+	}
+	.bicycle-img{
+		width: 40%;
+		height: 320px;
+		margin-left: -15px;
+
+	}
+	.bicycle-img img{
+		object-fit: contain;
+		height: 320px;
+
+
+	}
+	.small-bicycle{
+		display: none;
+	}
+	.big-bicycle{
+		display: block;
+	}
+	.main-text{
+		display: flex;	
+		margin-right: 0;
+		width: 60%;
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+
+	.main-text__subtitle{
+		margin-top: 5px;
+	}
+	.main-text__text{
+		padding-top: 15px;
+	}
+	.sectionDescription{
+		max-width: 100%;
+	}
+	.text-characteristics__subtitle{
+		margin-bottom: 15px;
+	
+
+	}
+	
+	.characteristics-list{
+		height: 80px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.add-characteristics__subtitle{
+		margin-top: 20px;
+	}
+	.add-characteristics__input-and-button{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.add-characteristics__btn{
+		/*padding: 14px 24px;*/
+		width: 100%;
+		margin-left: 40px;
+		
+	}
+	.add-characteristics__inp{
+		padding: 14px 24px;
+		width: 110%;
+	}
+	.banner {
+		grid-area: banner;
+		padding: 20px 15px 20px 15px;
+		display: flex;
+		justify-content: left;	
+	}
+	.banner__ok__button{
+		padding: 14px 24px;
+		margin-right: 20px;
+	}
+	.banner__cancel__button{
+		padding: 14px 24px;
+	}
+
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 60%;
+		margin-left: 40px;
+		overflow: hidden;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 20px;
+		
+	}
+	.main-content {
+	display: flex;	
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid lightgray;
+
+	
+	}
+	.bicycle-img{
+		width: 42%;
+		height: 310px;
+		margin-left: -20px;
+
+	}
+	.bicycle-img img{
+		object-fit: contain;
+		height: 250px;
+
+
+	}
+	.small-bicycle{
+		display: none;
+	}
+	.big-bicycle{
+		display: block;
+	}
+	.main-text{
+		display: flex;	
+		margin-right: 0;
+		width: 60%;
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+
+	.main-text__subtitle{
+		font-size: 26px;
+		line-height: 39px;
+		margin-top: 10px;
+	}
+	.main-text__text{
+		padding-top: 15px;
+	}
+	.line{
+		display: none;
+	}
+	.text-characteristics__subtitle{
+		margin-bottom: 15px;
+		font-size: 18px;
+		line-height: 27px;
+
+	}
+	
+	.characteristics-list{
+		height: 80px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.add-characteristics__subtitle{
+		font-size: 18px;
+		line-height: 27px;
+		margin-top: 20px;
+	}
+	.add-characteristics__input-and-button{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.add-characteristics__btn{
+		width: 100%;
+		margin-left: 40px;
+		
+	}
+	.add-characteristics__inp{
+		padding: 14px 24px;
+		width: 110%;
+	}
+	.banner {
+		grid-area: banner;
+		padding: 20px 15px 20px 15px;
+		display: flex;
+		justify-content: left;	
+	}
+	.banner__ok__button{
+		padding: 14px 24px;
+		margin-right: 20px;
+	}
+	.banner__cancel__button{
+		padding: 14px 24px;
+	}
+
+
+
+}
